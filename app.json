@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Jarvis AI",
+    "slug": "jarvis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "jarvis",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "backgroundColor": "#000000",
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Jarvis needs microphone access for voice commands.",
+        "NSCameraUsageDescription": "Jarvis needs camera access for visual tasks.",
+        "NSSpeechRecognitionUsageDescription": "Jarvis needs speech recognition for voice input."
+      }
+    },
+    "android": {
+      "package": "com.jarvis.aiassistant",
+      "versionCode": 1,
+      "permissions": [
+        "RECORD_AUDIO",
+        "INTERNET",
+        "WAKE_LOCK",
+        "FOREGROUND_SERVICE",
+        "RECEIVE_BOOT_COMPLETED",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-secure-store",
+      "expo-av"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "owner": "nazmulislamrishads-team",
+    "extra": {
+      "eas": {
+        "projectId": "c0616b07-536e-4d7d-93c6-f5da614f8fe8"
+      }
+    }
+  }
+}
